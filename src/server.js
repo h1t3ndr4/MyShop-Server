@@ -18,9 +18,9 @@ app.use("/users", userController);
 app.use("/products", productController);
 app.use("/cart", cartController);
 
+app.get("/userdata", getUsers);
 app.post("/register", register);
 app.post("/login", login);
-app.get("/userdata", getUsers);
 
 app.listen(port, async (req, res) => {
   try {
